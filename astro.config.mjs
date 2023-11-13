@@ -26,6 +26,6 @@ export default defineConfig({
         }),
         svelte(),
     ],
-    output: 'dist',
+    output: 'server',
     adapter: cloudflare(),
 });
