@@ -19,7 +19,7 @@ const { title, description } = Astro.props;
 
         <title>{title && `${title} | `}Void</title>
         <meta name="description" content={description} />
-        <meta name="author" content="Vencord Contributors" />
+        <meta name="author" content="YoruAkio" />
         <meta name="theme-color" content="#dd7878" />
 
         <link rel="sitemap" href="/sitemap-index.xml" />
@@ -298,17 +298,8 @@ const { title, description } = Astro.props;
         }
     }
 
-    @font-face {
-        font-family: "Inter";
-        src: url("/fonts/Inter.var-subset.woff2") format("woff2");
-        font-weight: 100 900;
-        font-display: swap;
-        font-style: normal;
-        font-named-instance: "Regular";
-    }
-
     html {
-        font-family: Inter, system-ui, sans-serif;
+        font-family: system-ui, sans-serif;
         font-weight: var(--fontWeightRegular);
         line-height: 1.5;
 
