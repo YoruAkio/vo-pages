@@ -6,7 +6,10 @@ import Layout from '../layouts/Layout.astro'
 	<main>
 		<h1>Hello, world!</h1>
 
-		<p class="p-text">Voids are my small project, currently working on bot and website page.</p>
+		<p class="p-text float-class">Voids are my small project, currently working on bot and website page.</p>
+		
+		<!-- adding this ("https://raw.githubusercontent.com/YoruAkio/YoruAkio/main/joged.gif") gif image right after the p tag -->
+		<img class="gif-image" src="https://raw.githubusercontent.com/YoruAkio/YoruAkio/main/joged.gif" alt="joged" width="200" height="200" />
 
 		<ul>
 			<a class="p-text" href="https://codeberg.org/Vo"><li>Codeberg</li></a>
@@ -19,7 +22,7 @@ import Layout from '../layouts/Layout.astro'
 <style>
 	@font-face {
         font-family: "Victor Mono";
-        src: url("assets/ttf/VictorMono-BoldItalic.ttf") format("truetype");
+        src: url("/assets/ttf/VictorMono-BoldItalic.ttf") format("truetype");
     }
 
 	main {
@@ -36,5 +39,13 @@ import Layout from '../layouts/Layout.astro'
 		font-family: "Victor Mono", system-ui, sans-serif;
 		font-style: italic;
 		font-weight: 900;
+	}
+
+	.float-class {
+		float: left;
+	}
+
+	.gif-image {
+		justify-content: center;
 	}
 </style>
